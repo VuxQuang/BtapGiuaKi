@@ -2,6 +2,7 @@
 session_start();
 $_SESSION["IsLogin"] = false;
 
+$uri = "mysql://{$aivenUsername}:{$aivenPassword}@quang-1a-webadvanced1.l.aivencloud.com:22234/defaultdb?ssl-mode=REQUIRED";
 $fields = parse_url($uri);
 
 // build the DSN including SSL settings
